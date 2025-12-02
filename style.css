@@ -6,3 +6,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  border: 1px solid black;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.left {
+  width: 100%;
+  border: 1px solid green;
+}
+
+.right {
+  width: 100%;
+  border: 1px solid orangered;
+}
