@@ -4,7 +4,8 @@
   --light-bg: #fff;
 
   /* wrappers/containers sizes */
-  --wrapper-width: 1200px;
+  /* --wrapper-width: 1200px; */
+  --wrapper-width: clamp(320px, 90vw, 1400px);
 }
 
 * {
@@ -27,6 +28,7 @@ body {
 
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: var(--wrapper-width);
   border: 1px solid black;
@@ -35,15 +37,11 @@ body {
   background-color: var(--light-bg);
 }
 
-.left {
-  width: 100%;
-  border: 1px solid green;
-  text-align: center;
-}
-
+.left,
 .right {
-  width: 100%;
-  border: 1px solid orangered;
+  flex: 1 1 45%;
+  min-width: 300px;
+  border: 1px solid green;
   text-align: center;
 }
 
@@ -51,12 +49,14 @@ body {
   width: 100%;
   max-width: var(--wrapper-width);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   color: var(--light-bg);
   gap: 2rem;
   text-align: center;
 
   .grid-card {
     border: 1px solid var(--light-bg);
+    border-radius: 1rem;
+    padding: 1rem;
   }
 }
