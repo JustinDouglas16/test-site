@@ -3,6 +3,8 @@
   --dark-bg: #333;
   --light-bg: #fff;
 
+  --hero-bg: #458e42;
+
   /* wrappers/containers sizes */
   /* --wrapper-width: 1200px; */
   --wrapper-width: clamp(320px, 90vw, 1400px);
@@ -16,6 +18,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--dark-bg);
+}
+
+.hero-wrapper {
+  background-color: var(--hero-bg);
 }
 
 .main-wrapper {
