@@ -5,6 +5,9 @@
 
   --hero-bg: #458e42;
 
+  /* font */
+  --site-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
   /* wrappers/containers sizes */
   /* --wrapper-width: 1200px; */
   --wrapper-width: clamp(320px, 90vw, 1400px);
@@ -18,10 +21,42 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--dark-bg);
+  font-family: var(--site-font);
 }
 
 .hero-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   background-color: var(--hero-bg);
+  padding-block: 4rem;
+}
+
+.hero-wrapper-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  max-width: var(--wrapper-width);
+
+  h2 {
+    color: var(--light-bg);
+    font-weight: 700;
+    font-size: clamp(1.25rem, -0.0625rem + 7vw, 3.875rem);
+    padding: 0;
+    margin: 0;
+  }
+
+  span {
+    color: var(--light-bg);
+    font-size: clamp(1.25rem, 0.9375rem + 1.6667vw, 1.875rem);
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--light-bg);
+  }
 }
 
 .main-wrapper {
