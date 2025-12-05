@@ -47,6 +47,7 @@ body {
     font-size: clamp(1.25rem, -0.0625rem + 7vw, 3.875rem);
     padding: 0;
     margin: 0;
+    line-height: 1.5;
   }
 
   span {
@@ -66,6 +67,7 @@ body {
     width: fit-content;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
+    text-decoration: none;
 
     &:hover {
       background-color: oklch(100% 0.00011 271.152 / 0.459);
@@ -87,6 +89,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  padding-block: 4rem;
 }
 
 .wrapper {
