@@ -29,7 +29,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: var(--hero-bg);
-  padding-block: 4rem;
+  padding-block: 5rem;
 }
 
 .hero-wrapper-content {
@@ -39,6 +39,7 @@ body {
   align-items: flex-start;
   border: 1px solid black;
   max-width: var(--wrapper-width);
+  gap: 1rem;
 
   h2 {
     color: var(--light-bg);
@@ -64,10 +65,17 @@ body {
     cursor: pointer;
     width: fit-content;
     border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      background-color: oklch(100% 0.00011 271.152 / 0.459);
+      transform: scale(1.05);
+      border: 3px solid var(--light-bg);
+    }
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--light-bg);
     cursor: pointer;
   }
