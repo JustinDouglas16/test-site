@@ -59,21 +59,34 @@
             </div>
         </div>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod perferendis error fugiat temporibus
-            maiores dicta nostrum aperiam numquam totam rerum nam tempora iure laudantium, quos, sequi similique
-            quisquam debitis.</p>
+
+    <div class="main-wrapper">
+        <div class="wrapper-3">
+            <!-- rolling out own accordion -->
+            <section class="accordion">
+                <h3>
+                    <button aria-expanded="false" aria-controls="panel-1" id="accordion-btn-1">
+                        Item 1
+                    </button>
+                </h3>
+                <div id="panel-1" role="region" aria-labelledby="accordion-btn-1" hidden>
+                    <p>Content for the first item goes here.</p>
+                </div>
+
+                <h3>
+                    <button aria-expanded="false" aria-controls="panel-2" id="accordion-btn-2">
+                        Item 2
+                    </button>
+                </h3>
+                <div id="panel-2" role="region" aria-labelledby="accordion-btn-2" hidden>
+                    <p>Content for the second item goes here.</p>
+                </div>
+            </section>
+
+        </div>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod perferendis error fugiat temporibus
-            maiores dicta nostrum aperiam numquam totam rerum nam tempora iure laudantium, quos, sequi similique
-            quisquam debitis.</p>
-    </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quod perferendis error fugiat temporibus
-            maiores dicta nostrum aperiam numquam totam rerum nam tempora iure laudantium, quos, sequi similique
-            quisquam debitis.</p>
-    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -145,3 +145,24 @@ body {
     }
   }
 }
+
+.wrapper-3 {
+  display: flex;
+  width: 100%;
+  max-width: var(--wrapper-width);
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion button {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+}
+
+.accordion [role="region"] {
+  padding: 0.5rem 1rem;
+  border-left: 2px solid #ccc;
+}
