@@ -160,9 +160,12 @@ body {
   width: 100%;
   text-align: left;
   font-weight: 600;
+  padding-block: 20px;
+  padding-inline: 20px;
 }
 
 .accordion [role="region"] {
   padding: 0.5rem 1rem;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid orangered;
+  background-color: var(--light-bg);
 }
