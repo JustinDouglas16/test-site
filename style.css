@@ -41,6 +41,13 @@ td {
   padding: 1rem;
 }
 
+th {
+  position: sticky;
+  top: 0;
+  background-color: #444444;
+  z-index: 1; /* Ensure the header is above the table body content */
+}
+
 .hero-wrapper {
   width: 100%;
   display: flex;
@@ -277,7 +284,7 @@ td {
   /* Set overall alignment if needed */
   text-align: center;
   font-family: Arial, sans-serif; /* Use a common font */
-  color:var(--light-bg); /* Dark gray color */
+  color: var(--light-bg); /* Dark gray color */
   padding: 10px;
 }
 
