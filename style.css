@@ -28,14 +28,17 @@ table {
   width: 100%;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid var(--light-bg);
   border-collapse: collapse;
   color: var(--light-bg);
 }
 
-th, td {
-  padding: 10px;
+th,
+td {
+  padding: 1rem;
 }
 
 .hero-wrapper {
@@ -266,3 +269,28 @@ th, td {
   }
 }
 
+.price-display {
+  /* Set overall alignment if needed */
+  text-align: center;
+  font-family: Arial, sans-serif; /* Use a common font */
+  color:var(--light-bg); /* Dark gray color */
+  padding: 10px;
+}
+
+.currency,
+.amount {
+  font-size: 48px; /* Large font size for the main number */
+  font-weight: bold; /* Bold text */
+}
+
+.decimal {
+  font-size: 24px; /* Smaller font size for the decimal part */
+  vertical-align: top; /* Aligns the number higher up (superscript) */
+  font-weight: bold;
+}
+
+.frequency {
+  font-size: 16px; /* Smaller font size for "EUR / Month" */
+  margin-top: 5px; /* Add a little space above this text */
+  text-transform: uppercase; /* Optional: makes the text uppercase like the image */
+}
