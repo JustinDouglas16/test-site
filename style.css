@@ -305,3 +305,13 @@ th {
   margin-top: 5px; /* Add a little space above this text */
   text-transform: uppercase; /* Optional: makes the text uppercase like the image */
 }
+
+.pricing-btn {
+  background-color: #e56d39;
+  color: var(--light-bg);
+  text-decoration: none;
+  font-weight: 400;
+  padding-block: 0.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 3px;
+}
