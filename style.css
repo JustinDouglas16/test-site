@@ -269,6 +269,10 @@ td {
   }
 }
 
+.price-heading {
+  font-size: 3.125rem;
+}
+
 .price-display {
   /* Set overall alignment if needed */
   text-align: center;
