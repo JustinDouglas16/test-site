@@ -285,6 +285,7 @@ th {
   text-align: center;
   font-family: Arial, sans-serif; /* Use a common font */
   color: var(--light-bg); /* Dark gray color */
+  margin-block-end: 1rem;
   padding: 10px;
 }
 
