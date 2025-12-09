@@ -24,10 +24,18 @@ body {
   font-family: var(--site-font);
 }
 
+table {
+  width: 100%;
+}
+
 table, th, td {
   border: 1px solid var(--light-bg);
   border-collapse: collapse;
   color: var(--light-bg);
+}
+
+th, td {
+  padding: 10px;
 }
 
 .hero-wrapper {
