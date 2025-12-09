@@ -24,6 +24,12 @@ body {
   font-family: var(--site-font);
 }
 
+table, th, td {
+  border: 1px solid var(--light-bg);
+  border-collapse: collapse;
+  color: var(--light-bg);
+}
+
 .hero-wrapper {
   width: 100%;
   display: flex;
@@ -251,3 +257,4 @@ body {
     transition: none !important;
   }
 }
+
