@@ -2,6 +2,7 @@
   /* colors */
   --dark-bg: #333;
   --light-bg: #fff;
+  --orange: #e56d39;
 
   --hero-bg: #458e42;
 
@@ -308,7 +309,7 @@ th {
 }
 
 .pricing-btn {
-  background-color: #e56d39;
+  background-color: var(--orange);
   color: var(--light-bg);
   text-decoration: none;
   font-weight: 400;
