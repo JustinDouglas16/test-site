@@ -28,11 +28,18 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding-block: 1rem;
   padding: 1rem;
   background-color: var(--light-bg);
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: var(--wrapper-width);
+  }
 
   .site-title {
     font-size: 2rem;
