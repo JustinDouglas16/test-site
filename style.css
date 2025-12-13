@@ -52,6 +52,22 @@ header {
     padding: 0;
   }
 
+  .cta-btn {
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
+    border: 1px solid var(--hero-bg);
+    border-radius: 5px;background-color: var(--hero-bg);
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light-bg);
+
+    &:hover {
+      background-color: var(--light-bg);
+      border: 1px solid var(--hero-bg);
+      color: var(--hero-bg);
+    }
+  }
+
 }
 
 table {
