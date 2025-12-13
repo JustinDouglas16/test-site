@@ -2,6 +2,7 @@
   /* colors */
   --dark-bg: #333;
   --light-bg: #fff;
+  --black: #000;
   --orange: #e56d39;
 
   --hero-bg: #458e42;
@@ -32,6 +33,25 @@ header {
   padding-block: 1rem;
   padding: 1rem;
   background-color: var(--light-bg);
+
+  .site-title {
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+  }
+
 }
 
 table {
