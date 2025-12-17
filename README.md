@@ -2,7 +2,7 @@
 ## purpose is to refine my skills or check new html,css & js features
 ---
 ### TODOS LIST
-- footer component
+- TODO: footer component
 - TODO: check scroll snap
 - TODO: anchor positioning
 - TODO: container queries
