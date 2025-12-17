@@ -169,6 +169,12 @@ th {
   padding-block: 4rem;
 }
 
+.image-wrapper {
+  width: 100%;
+  background-image: url("/img/banner-img-1920@1080.jpg");
+  height: 70vh;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
