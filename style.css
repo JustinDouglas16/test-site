@@ -63,7 +63,8 @@ header {
     padding-block: 0.5rem;
     padding-inline: 1rem;
     border: 1px solid var(--hero-bg);
-    border-radius: 5px;background-color: var(--hero-bg);
+    border-radius: 5px;
+    background-color: var(--hero-bg);
     text-decoration: none;
     cursor: pointer;
     color: var(--light-bg);
@@ -74,7 +75,6 @@ header {
       color: var(--hero-bg);
     }
   }
-
 }
 
 table {
@@ -173,6 +173,9 @@ th {
   width: 100%;
   background-image: url("/img/banner-img-1920@1080.jpg");
   height: 70vh;
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 .wrapper {
