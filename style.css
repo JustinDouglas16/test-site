@@ -507,6 +507,25 @@ input:checked + .slider:before {
   scroll-behavior: smooth;
   anchor-name: --carousel;
   scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+}
+
+.carousel::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.card::scroll-marker {
+  content: '';
+  height: 1em;
+  width: 1em;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+
+.card::scroll-marker:target-current {
+  background-color: var(--hero-bg);
 }
 
 .carousel::-webkit-scrollbar {
@@ -545,7 +564,8 @@ input:checked + .slider:before {
 .card {
   scroll-snap-align: start;
   flex: 0 0 20em;
-  height: 12em;
+  /* height: 12em; */
+  aspect-ratio: 5 / 3;
   background-color: var(--hero-bg);
   padding: 1em;
   border-radius: .5em;
