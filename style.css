@@ -506,6 +506,24 @@ input:checked + .slider:before {
   gap: 1em;
 }
 
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel::scroll-button(right) {
+  content: '→';
+  border: none;
+  background-color: var(--orange);
+  font-family: inherit;
+  font-size: 3rem;
+  color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-bottom: .1em;
+  cursor: pointer;
+}
+
 .card {
   flex: 0 0 20em;
   height: 12em;
