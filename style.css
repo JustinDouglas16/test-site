@@ -529,6 +529,11 @@ input:checked + .slider:before {
   content: '←';
 }
 
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
 .card {
   flex: 0 0 20em;
   height: 12em;
