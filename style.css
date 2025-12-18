@@ -513,11 +513,11 @@ input:checked + .slider:before {
 .carousel::scroll-marker-group {
   display: flex;
   justify-content: center;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .card::scroll-marker {
-  content: '';
+  content: "";
   height: 1em;
   width: 1em;
   background-color: var(--black);
@@ -532,8 +532,9 @@ input:checked + .slider:before {
   display: none;
 }
 
-.carousel::scroll-button(right), .carousel::scroll-button(left) {
-  content: '→';
+.carousel::scroll-button(right),
+.carousel::scroll-button(left) {
+  content: "→";
   border: none;
   background-color: var(--orange);
   font-family: inherit;
@@ -542,7 +543,7 @@ input:checked + .slider:before {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  padding-bottom: .1em;
+  padding-bottom: 0.1em;
   cursor: pointer;
   position: fixed;
   position-anchor: --carousel;
@@ -551,12 +552,13 @@ input:checked + .slider:before {
 }
 
 .carousel::scroll-button(left) {
-  content: '←';
+  content: "←";
   position-area: left center;
   translate: 50%;
 }
 
-.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+.carousel::scroll-button(right):disabled,
+.carousel::scroll-button(left):disabled {
   opacity: 0.5;
   cursor: auto;
 }
@@ -568,12 +570,12 @@ input:checked + .slider:before {
   aspect-ratio: 5 / 3;
   background-color: var(--hero-bg);
   padding: 1em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   text-align: center;
   align-content: center;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .card {
     flex: 0 0 100%;
   }
