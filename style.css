@@ -505,6 +505,8 @@ input:checked + .slider:before {
   display: flex;
   gap: 1em;
   scroll-behavior: smooth;
+  anchor-name: --carousel;
+  scroll-snap-type: x mandatory;
 }
 
 .carousel::-webkit-scrollbar {
@@ -523,10 +525,16 @@ input:checked + .slider:before {
   border-radius: 50%;
   padding-bottom: .1em;
   cursor: pointer;
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: right center;
+  translate: -50%;
 }
 
 .carousel::scroll-button(left) {
   content: '←';
+  position-area: left center;
+  translate: 50%;
 }
 
 .carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
@@ -535,6 +543,7 @@ input:checked + .slider:before {
 }
 
 .card {
+  scroll-snap-align: start;
   flex: 0 0 20em;
   height: 12em;
   background-color: var(--hero-bg);
@@ -542,4 +551,10 @@ input:checked + .slider:before {
   border-radius: .5em;
   text-align: center;
   align-content: center;
+}
+
+@media(max-width: 500px) {
+  .card {
+    flex: 0 0 100%;
+  }
 }
