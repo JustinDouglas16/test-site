@@ -497,3 +497,19 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.carousel {
+  margin: 3em auto;
+  display: flex;
+  gap: 1em;
+}
+
+.card {
+  flex: 0 0 20em;
+  height: 12em;
+  background-color: var(--hero-bg);
+  padding: 1em;
+  border-radius: .5em;
+  text-align: center;
+  align-content: center;
+}
