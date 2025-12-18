@@ -499,6 +499,8 @@ input:checked + .slider:before {
 }
 
 .carousel {
+  width: 100%;
+  overflow-x: auto;
   margin: 3em auto;
   display: flex;
   gap: 1em;
