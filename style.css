@@ -580,3 +580,85 @@ input:checked + .slider:before {
     flex: 0 0 100%;
   }
 }
+
+/* mobile table card */
+/* Visibility Logic */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    width: 100%;
+    padding-inline: 1rem;
+  }
+}
+
+/* Mobile Card Styling */
+.pricing-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: var(--wrapper-width);
+}
+
+.pricing-card {
+  background-color: #444; /* Match your sticky header color */
+  border: 2px solid var(--hero-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  background-color: var(--light-bg);
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 3px solid var(--hero-bg);
+}
+
+.card-header .price-heading {
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.card-header .price-display {
+  color: var(--black);
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 1rem;
+  color: var(--light-bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-list li span {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Reusing your existing pricing-btn style, just ensuring it looks good in the card */
+.pricing-card .pricing-btn {
+  display: inline-block;
+  margin-top: 1rem;
+}
