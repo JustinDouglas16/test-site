@@ -792,3 +792,60 @@ input:checked + .slider:before {
 .check-icon {
   color: var(--hero-bg); /* Using your green */
 }
+
+
+.feature-wrapper {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* When collapsed, limit height and show fade */
+.feature-wrapper.collapsed {
+  max-height: 180px; /* Adjust based on how many rows you want visible */
+}
+
+/* The transparency fade effect */
+.feature-wrapper.collapsed .list-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, hsl(var(--sc-muted)));
+  pointer-events: none;
+}
+
+/* Expanded state */
+.feature-wrapper.expanded {
+  max-height: 1000px; /* Large enough to fit all 20+ items */
+}
+
+/* The Button Styling */
+.expand-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--sc-primary); /* Your Orange */
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding-top: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.expand-btn:hover {
+  filter: brightness(1.2);
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.expanded + .expand-btn .chevron {
+  transform: rotate(180deg);
+}

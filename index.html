@@ -391,13 +391,11 @@
     <!-- mobile table component v2 -->
     <div class="mobile-only">
         <div class="pricing-card-shadcn">
-            <!-- Header: Title & Description -->
             <div class="card-header">
                 <h3 class="card-title">Supporter</h3>
-                <p class="card-description">Essential WordPress maintenance for growing sites.</p>
+                <p class="card-description">Essential maintenance for growing sites.</p>
             </div>
 
-            <!-- Content: Price -->
             <div class="card-content">
                 <div class="price-container">
                     <span class="currency">€</span>
@@ -405,47 +403,78 @@
                     <span class="decimal">36</span>
                 </div>
                 <p class="frequency">EUR / Month</p>
-
                 <a href="#" class="cta-primary">Choose a plan</a>
             </div>
 
-            <!-- Footer: Feature List -->
+            <!-- The Footer now handles the long list -->
             <div class="card-footer">
-                <div class="feature-header">Everything in Supporter:</div>
-                <ul class="feature-list">
-                    <li>
-                        <span>WordPress Updates</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                            class="check-icon">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </li>
-                    <li>
-                        <span>WordPress Support</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                            class="check-icon">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </li>
-                    <li>
-                        <span>Performance scan</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                            class="check-icon">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </li>
-                    <li>
-                        <span>24/7 Uptime Monitor</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
-                            class="check-icon">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                    </li>
-                </ul>
+                <div class="feature-header">What's included:</div>
+
+                <div class="feature-wrapper collapsed" id="wrapper-1">
+                    <ul class="feature-list">
+                        <li><span>WordPress Updates</span> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>WordPress Support</span> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Performance scan</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>24/7 Uptime Monitor</span> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Premium Plugins</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Weekly Reports</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Cloud Backups</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>GA4 Integration</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Link Analysis</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <li><span>Security Software</span> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg></li>
+                        <!-- ... imagine 10 more items here ... -->
+                    </ul>
+                    <!-- The gradient fade -->
+                    <div class="list-overlay"></div>
+                </div>
+
+                <button class="expand-btn" onclick="toggleList('wrapper-1', this)">
+                    View all features
+                    <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>

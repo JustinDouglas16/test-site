@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -135,4 +134,19 @@ function openCity(evt, cityName) {
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+}
+
+function toggleList(wrapperId, btn) {
+  const wrapper = document.getElementById(wrapperId);
+  const isCollapsed = wrapper.classList.contains("collapsed");
+
+  if (isCollapsed) {
+    wrapper.classList.remove("collapsed");
+    wrapper.classList.add("expanded");
+    btn.firstChild.textContent = "Show less ";
+  } else {
+    wrapper.classList.remove("expanded");
+    wrapper.classList.add("collapsed");
+    btn.firstChild.textContent = "View all features ";
+  }
 }
